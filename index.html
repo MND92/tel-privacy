@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trans Europe Logistics — Privacy Policy</title>
+<style>
+  :root { --bg: #f5f7fa; --card: #fff; --text: #1b2633; --dim: #5a6878; --accent: #0a7fd0; --line: #dde4ea; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1720; --card: #17222e; --text: #e6edf3; --dim: #93a3b3; --accent: #4fb0f0; --line: #2a3846; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+  h1 { font-size: 1.5em; margin: 0 0 4px; } h2 { font-size: 1.1em; margin: 1.6em 0 .4em; }
+  .date { color: var(--dim); margin: 0 0 1em; }
+  a { color: var(--accent); }
+  nav { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  nav button { font: inherit; font-size: 14px; padding: 4px 10px; border-radius: 6px; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; }
+  nav button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  ul { padding-left: 1.2em; }
+</style>
+</head>
+<body>
+<main>
+  <nav id="langs"></nav>
+  <div class="card" id="doc"></div>
+</main>
+<script>
+const EMAIL = 'nik911911@gmail.com';
+const LINKS = { gp: 'https://policies.google.com/privacy', gpart: 'https://policies.google.com/technologies/partner-sites', ads: 'https://adssettings.google.com' };
+// each language: [name, title, date, intro, [heading, html]...]
+const T = {
+en: ['English', 'Privacy Policy', 'Effective date: October 22, 2026',
+ 'This Privacy Policy explains how the mobile game <b>Trans Europe Logistics</b> (the “Game”), developed by an individual developer, handles information. By using the Game you agree to this policy.',
+ ['Information we collect', 'The Game has no accounts, registration or sign-in. We do not ask for your name, email, phone number, contacts, photos or location. Your game progress and settings are stored only on your device and are never sent to us.'],
+ ['Advertising (Google AdMob)', 'The Game shows ads provided by Google AdMob. To show and measure ads and to prevent fraud, Google may collect and process: your device’s advertising ID, device and app information (model, OS version, language), IP address (which may give an approximate location), and data about interactions with ads, as well as crash and diagnostic data. This data is collected and processed by Google under the <a href="{gp}">Google Privacy Policy</a>. Learn more: <a href="{gpart}">How Google uses information from sites or apps that use its services</a>.'],
+ ['Your consent and choices', 'If you are in the European Economic Area, the United Kingdom or Switzerland, the Game asks for your consent before personalized ads are shown. You can change your choice at any time with the “Ad privacy settings” button in the Game. On Android you can also reset or delete your advertising ID in the device settings (Settings → Google → Ads) and manage ad personalization at <a href="{ads}">adssettings.google.com</a>.'],
+ ['Notifications', 'If you allow notifications, the Game creates local reminders on your device (for example, when a truck finishes a job). They are created on the device and do not send any data.'],
+ ['Sharing and selling of data', 'We do not sell your personal data. We do not share data with anyone except Google as the advertising provider described above.'],
+ ['Data retention and deletion', 'Game data stays on your device until you delete the Game or clear its data. Because we do not store any of your data on our servers, there is nothing for us to delete; for data processed by Google, use the options described above.'],
+ ['Children', 'The Game is not directed at children under 13, and we do not knowingly collect personal data from children.'],
+ ['Changes to this policy', 'We may update this policy. The current version is always available on this page, with the effective date shown above.'],
+ ['Contact', 'If you have any questions about this policy, contact us at <a href="mailto:{email}">{email}</a>.']],
+ru: ['Русский', 'Политика конфиденциальности', 'Дата вступления в силу: 22 октября 2026 г.',
+ 'Эта политика объясняет, как мобильная игра <b>Trans Europe Logistics</b> («Игра»), созданная частным разработчиком, обращается с информацией. Пользуясь Игрой, вы соглашаетесь с этой политикой.',
+ ['Какие данные мы собираем', 'В Игре нет аккаунтов, регистрации и входа. Мы не запрашиваем ваше имя, электронную почту, номер телефона, контакты, фото или местоположение. Прогресс и настройки Игры хранятся только на вашем устройстве и никогда не отправляются нам.'],
+ ['Реклама (Google AdMob)', 'В Игре показывается реклама Google AdMob. Чтобы показывать и оценивать рекламу и предотвращать мошенничество, Google может собирать и обрабатывать: рекламный идентификатор устройства, сведения об устройстве и приложении (модель, версия системы, язык), IP-адрес (по нему можно примерно определить местоположение), данные о взаимодействии с рекламой, а также данные о сбоях и диагностике. Эти данные собирает и обрабатывает Google согласно <a href="{gp}">Политике конфиденциальности Google</a>. Подробнее: <a href="{gpart}">как Google использует данные сайтов и приложений, которые пользуются его сервисами</a>.'],
+ ['Ваше согласие и выбор', 'Если вы находитесь в Европейской экономической зоне, Великобритании или Швейцарии, Игра запрашивает ваше согласие перед показом персонализированной рекламы. Изменить выбор можно в любой момент кнопкой «Настройки конфиденциальности рекламы» в Игре. На Android также можно сбросить или удалить рекламный идентификатор в настройках устройства (Настройки → Google → Реклама) и управлять персонализацией рекламы на <a href="{ads}">adssettings.google.com</a>.'],
+ ['Уведомления', 'Если вы разрешите уведомления, Игра создаёт локальные напоминания на устройстве (например, когда грузовик завершил рейс). Они создаются на самом устройстве и никаких данных не отправляют.'],
+ ['Передача и продажа данных', 'Мы не продаём ваши персональные данные и не передаём данные никому, кроме Google как рекламного партнёра, указанного выше.'],
+ ['Хранение и удаление данных', 'Данные Игры остаются на вашем устройстве, пока вы не удалите Игру или не очистите её данные. Мы не храним ваши данные на своих серверах, поэтому удалять у нас нечего; для данных, которые обрабатывает Google, используйте способы, описанные выше.'],
+ ['Дети', 'Игра не предназначена для детей младше 13 лет, и мы сознательно не собираем персональные данные детей.'],
+ ['Изменения политики', 'Мы можем обновлять эту политику. Актуальная версия всегда доступна на этой странице, дата вступления в силу указана выше.'],
+ ['Контакты', 'Если у вас есть вопросы об этой политике, напишите нам: <a href="mailto:{email}">{email}</a>.']],
+uk: ['Українська', 'Політика конфіденційності', 'Дата набрання чинності: 22 жовтня 2026 р.',
+ 'Ця політика пояснює, як мобільна гра <b>Trans Europe Logistics</b> («Гра»), створена приватним розробником, поводиться з інформацією. Користуючись Грою, ви погоджуєтеся з цією політикою.',
+ ['Які дані ми збираємо', 'У Грі немає облікових записів, реєстрації та входу. Ми не запитуємо ваше ім’я, електронну пошту, номер телефону, контакти, фото чи місцезнаходження. Прогрес і налаштування Гри зберігаються лише на вашому пристрої та ніколи не надсилаються нам.'],
+ ['Реклама (Google AdMob)', 'У Грі показується реклама Google AdMob. Щоб показувати й оцінювати рекламу та запобігати шахрайству, Google може збирати й обробляти: рекламний ідентифікатор пристрою, відомості про пристрій і застосунок (модель, версія системи, мова), IP-адресу (за нею можна приблизно визначити місцезнаходження), дані про взаємодію з рекламою, а також дані про збої та діагностику. Ці дані збирає й обробляє Google відповідно до <a href="{gp}">Політики конфіденційності Google</a>. Докладніше: <a href="{gpart}">як Google використовує дані сайтів і застосунків, що користуються його сервісами</a>.'],
+ ['Ваша згода та вибір', 'Якщо ви перебуваєте в Європейській економічній зоні, Великій Британії чи Швейцарії, Гра запитує вашу згоду перед показом персоналізованої реклами. Змінити вибір можна будь-коли кнопкою «Налаштування конфіденційності реклами» у Грі. На Android також можна скинути або видалити рекламний ідентифікатор у налаштуваннях пристрою (Налаштування → Google → Реклама) і керувати персоналізацією реклами на <a href="{ads}">adssettings.google.com</a>.'],
+ ['Сповіщення', 'Якщо ви дозволите сповіщення, Гра створює локальні нагадування на пристрої (наприклад, коли вантажівка завершила рейс). Вони створюються на самому пристрої й жодних даних не надсилають.'],
+ ['Передача та продаж даних', 'Ми не продаємо ваші персональні дані й не передаємо дані нікому, крім Google як рекламного партнера, зазначеного вище.'],
+ ['Зберігання та видалення даних', 'Дані Гри залишаються на вашому пристрої, доки ви не видалите Гру або не очистите її дані. Ми не зберігаємо ваші дані на своїх серверах, тож видаляти в нас нічого; для даних, які обробляє Google, використовуйте способи, описані вище.'],
+ ['Діти', 'Гра не призначена для дітей віком до 13 років, і ми свідомо не збираємо персональні дані дітей.'],
+ ['Зміни політики', 'Ми можемо оновлювати цю політику. Актуальна версія завжди доступна на цій сторінці, дату набрання чинності зазначено вище.'],
+ ['Контакти', 'Якщо у вас є запитання щодо цієї політики, напишіть нам: <a href="mailto:{email}">{email}</a>.']],
+de: ['Deutsch', 'Datenschutzerklärung', 'Gültig ab: 22. Oktober 2026',
+ 'Diese Datenschutzerklärung beschreibt, wie das Handyspiel <b>Trans Europe Logistics</b> (das „Spiel“), entwickelt von einem privaten Entwickler, mit Informationen umgeht. Mit der Nutzung des Spiels stimmst du dieser Erklärung zu.',
+ ['Welche Daten wir erheben', 'Das Spiel hat keine Konten, keine Registrierung und keine Anmeldung. Wir fragen weder nach deinem Namen, deiner E-Mail-Adresse, Telefonnummer, deinen Kontakten, Fotos noch deinem Standort. Spielstand und Einstellungen werden nur auf deinem Gerät gespeichert und nie an uns gesendet.'],
+ ['Werbung (Google AdMob)', 'Das Spiel zeigt Werbung von Google AdMob. Um Werbung anzuzeigen, zu messen und Betrug zu verhindern, kann Google Folgendes erheben und verarbeiten: die Werbe-ID deines Geräts, Geräte- und App-Informationen (Modell, Systemversion, Sprache), die IP-Adresse (aus der sich ein ungefährer Standort ableiten lässt), Daten über Interaktionen mit Werbung sowie Absturz- und Diagnosedaten. Diese Daten werden von Google gemäß der <a href="{gp}">Datenschutzerklärung von Google</a> erhoben und verarbeitet. Mehr dazu: <a href="{gpart}">Wie Google Daten von Websites und Apps verwendet, die Google-Dienste nutzen</a>.'],
+ ['Deine Einwilligung und Wahlmöglichkeiten', 'Wenn du dich im Europäischen Wirtschaftsraum, im Vereinigten Königreich oder in der Schweiz befindest, fragt das Spiel vor der Anzeige personalisierter Werbung nach deiner Einwilligung. Du kannst deine Wahl jederzeit über die Schaltfläche „Datenschutzeinstellungen für Werbung“ im Spiel ändern. Unter Android kannst du außerdem deine Werbe-ID in den Geräteeinstellungen zurücksetzen oder löschen (Einstellungen → Google → Werbung) und die Personalisierung von Werbung unter <a href="{ads}">adssettings.google.com</a> verwalten.'],
+ ['Benachrichtigungen', 'Wenn du Benachrichtigungen erlaubst, erstellt das Spiel lokale Erinnerungen auf deinem Gerät (z. B. wenn ein Lkw einen Auftrag abgeschlossen hat). Sie entstehen auf dem Gerät selbst und senden keine Daten.'],
+ ['Weitergabe und Verkauf von Daten', 'Wir verkaufen keine personenbezogenen Daten und geben keine Daten an Dritte weiter, außer an Google als oben genannten Werbepartner.'],
+ ['Speicherdauer und Löschung', 'Spieldaten bleiben auf deinem Gerät, bis du das Spiel deinstallierst oder seine Daten löschst. Da wir keine deiner Daten auf unseren Servern speichern, gibt es bei uns nichts zu löschen; für von Google verarbeitete Daten nutze die oben beschriebenen Möglichkeiten.'],
+ ['Kinder', 'Das Spiel richtet sich nicht an Kinder unter 13 Jahren, und wir erheben wissentlich keine personenbezogenen Daten von Kindern.'],
+ ['Änderungen', 'Wir können diese Erklärung aktualisieren. Die aktuelle Fassung ist immer auf dieser Seite verfügbar; das Gültigkeitsdatum steht oben.'],
+ ['Kontakt', 'Bei Fragen zu dieser Erklärung schreib uns an <a href="mailto:{email}">{email}</a>.']],
+fr: ['Français', 'Politique de confidentialité', 'Date d’entrée en vigueur : 22 octobre 2026',
+ 'Cette politique explique comment le jeu mobile <b>Trans Europe Logistics</b> (le « Jeu »), développé par un développeur indépendant, traite les informations. En utilisant le Jeu, vous acceptez cette politique.',
+ ['Données collectées', 'Le Jeu n’a ni compte, ni inscription, ni connexion. Nous ne demandons pas votre nom, votre e-mail, votre numéro de téléphone, vos contacts, vos photos ni votre position. Votre progression et vos réglages sont enregistrés uniquement sur votre appareil et ne nous sont jamais envoyés.'],
+ ['Publicité (Google AdMob)', 'Le Jeu affiche des publicités fournies par Google AdMob. Pour afficher et mesurer les publicités et prévenir la fraude, Google peut collecter et traiter : l’identifiant publicitaire de votre appareil, des informations sur l’appareil et l’application (modèle, version du système, langue), l’adresse IP (qui peut indiquer une position approximative), des données sur les interactions avec les publicités ainsi que des données de plantage et de diagnostic. Ces données sont collectées et traitées par Google conformément aux <a href="{gp}">Règles de confidentialité de Google</a>. En savoir plus : <a href="{gpart}">comment Google utilise les données des sites et applications qui utilisent ses services</a>.'],
+ ['Votre consentement et vos choix', 'Si vous vous trouvez dans l’Espace économique européen, au Royaume-Uni ou en Suisse, le Jeu demande votre consentement avant d’afficher des publicités personnalisées. Vous pouvez modifier votre choix à tout moment avec le bouton « Paramètres de confidentialité des annonces » dans le Jeu. Sur Android, vous pouvez aussi réinitialiser ou supprimer votre identifiant publicitaire dans les paramètres de l’appareil (Paramètres → Google → Annonces) et gérer la personnalisation des annonces sur <a href="{ads}">adssettings.google.com</a>.'],
+ ['Notifications', 'Si vous autorisez les notifications, le Jeu crée des rappels locaux sur votre appareil (par exemple lorsqu’un camion termine une mission). Ils sont créés sur l’appareil et n’envoient aucune donnée.'],
+ ['Partage et vente de données', 'Nous ne vendons pas vos données personnelles et ne les partageons avec personne, à l’exception de Google en tant que fournisseur publicitaire mentionné ci-dessus.'],
+ ['Conservation et suppression', 'Les données du Jeu restent sur votre appareil jusqu’à ce que vous supprimiez le Jeu ou effaciez ses données. Comme nous ne stockons aucune de vos données sur nos serveurs, nous n’avons rien à supprimer ; pour les données traitées par Google, utilisez les options décrites ci-dessus.'],
+ ['Enfants', 'Le Jeu ne s’adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données personnelles d’enfants.'],
+ ['Modifications', 'Nous pouvons mettre à jour cette politique. La version en vigueur est toujours disponible sur cette page, avec la date indiquée ci-dessus.'],
+ ['Contact', 'Pour toute question concernant cette politique, écrivez-nous à <a href="mailto:{email}">{email}</a>.']],
+es: ['Español', 'Política de privacidad', 'Fecha de entrada en vigor: 22 de octubre de 2026',
+ 'Esta política explica cómo el juego para móviles <b>Trans Europe Logistics</b> (el «Juego»), creado por un desarrollador particular, trata la información. Al usar el Juego aceptas esta política.',
+ ['Datos que recopilamos', 'El Juego no tiene cuentas, registro ni inicio de sesión. No pedimos tu nombre, correo electrónico, número de teléfono, contactos, fotos ni ubicación. Tu progreso y ajustes se guardan solo en tu dispositivo y nunca se nos envían.'],
+ ['Publicidad (Google AdMob)', 'El Juego muestra anuncios de Google AdMob. Para mostrar y medir anuncios y prevenir el fraude, Google puede recopilar y tratar: el ID de publicidad de tu dispositivo, información del dispositivo y de la aplicación (modelo, versión del sistema, idioma), la dirección IP (que puede indicar una ubicación aproximada), datos de interacción con anuncios y datos de fallos y diagnóstico. Google recopila y trata estos datos conforme a la <a href="{gp}">Política de privacidad de Google</a>. Más información: <a href="{gpart}">cómo usa Google la información de sitios y aplicaciones que utilizan sus servicios</a>.'],
+ ['Tu consentimiento y opciones', 'Si estás en el Espacio Económico Europeo, el Reino Unido o Suiza, el Juego te pide consentimiento antes de mostrar anuncios personalizados. Puedes cambiar tu elección en cualquier momento con el botón «Configuración de privacidad de anuncios» del Juego. En Android también puedes restablecer o eliminar tu ID de publicidad en los ajustes del dispositivo (Ajustes → Google → Anuncios) y gestionar la personalización de anuncios en <a href="{ads}">adssettings.google.com</a>.'],
+ ['Notificaciones', 'Si permites las notificaciones, el Juego crea recordatorios locales en tu dispositivo (por ejemplo, cuando un camión termina un encargo). Se crean en el propio dispositivo y no envían datos.'],
+ ['Cesión y venta de datos', 'No vendemos tus datos personales ni los compartimos con nadie, salvo con Google como proveedor de publicidad indicado arriba.'],
+ ['Conservación y eliminación', 'Los datos del Juego permanecen en tu dispositivo hasta que eliminas el Juego o borras sus datos. Como no guardamos tus datos en nuestros servidores, no tenemos nada que eliminar; para los datos tratados por Google, usa las opciones descritas arriba.'],
+ ['Menores', 'El Juego no está dirigido a menores de 13 años y no recopilamos a sabiendas datos personales de menores.'],
+ ['Cambios', 'Podemos actualizar esta política. La versión vigente siempre está disponible en esta página, con la fecha indicada arriba.'],
+ ['Contacto', 'Si tienes preguntas sobre esta política, escríbenos a <a href="mailto:{email}">{email}</a>.']],
+it: ['Italiano', 'Informativa sulla privacy', 'Data di entrata in vigore: 22 ottobre 2026',
+ 'Questa informativa spiega come il gioco per dispositivi mobili <b>Trans Europe Logistics</b> (il «Gioco»), realizzato da uno sviluppatore privato, tratta le informazioni. Usando il Gioco accetti questa informativa.',
+ ['Dati raccolti', 'Il Gioco non prevede account, registrazione né accesso. Non chiediamo il tuo nome, e-mail, numero di telefono, contatti, foto o posizione. I progressi e le impostazioni sono salvati solo sul tuo dispositivo e non ci vengono mai inviati.'],
+ ['Pubblicità (Google AdMob)', 'Il Gioco mostra annunci forniti da Google AdMob. Per mostrare e misurare gli annunci e prevenire le frodi, Google può raccogliere e trattare: l’ID pubblicità del dispositivo, informazioni sul dispositivo e sull’app (modello, versione del sistema, lingua), l’indirizzo IP (da cui si può ricavare una posizione approssimativa), dati sulle interazioni con gli annunci e dati su arresti anomali e diagnostica. Questi dati sono raccolti e trattati da Google secondo le <a href="{gp}">Norme sulla privacy di Google</a>. Maggiori informazioni: <a href="{gpart}">come Google utilizza i dati dei siti e delle app che usano i suoi servizi</a>.'],
+ ['Consenso e scelte', 'Se ti trovi nello Spazio economico europeo, nel Regno Unito o in Svizzera, il Gioco chiede il tuo consenso prima di mostrare annunci personalizzati. Puoi cambiare la tua scelta in qualsiasi momento con il pulsante «Impostazioni privacy della pubblicità» nel Gioco. Su Android puoi anche reimpostare o eliminare l’ID pubblicità nelle impostazioni del dispositivo (Impostazioni → Google → Annunci) e gestire la personalizzazione degli annunci su <a href="{ads}">adssettings.google.com</a>.'],
+ ['Notifiche', 'Se consenti le notifiche, il Gioco crea promemoria locali sul dispositivo (ad esempio quando un camion completa un incarico). Vengono creati sul dispositivo e non inviano alcun dato.'],
+ ['Condivisione e vendita dei dati', 'Non vendiamo i tuoi dati personali e non li condividiamo con nessuno, tranne Google in qualità di fornitore pubblicitario indicato sopra.'],
+ ['Conservazione ed eliminazione', 'I dati del Gioco restano sul tuo dispositivo finché non disinstalli il Gioco o ne cancelli i dati. Poiché non conserviamo i tuoi dati sui nostri server, non abbiamo nulla da eliminare; per i dati trattati da Google usa le opzioni descritte sopra.'],
+ ['Minori', 'Il Gioco non è rivolto a bambini di età inferiore a 13 anni e non raccogliamo consapevolmente dati personali di minori.'],
+ ['Modifiche', 'Potremmo aggiornare questa informativa. La versione in vigore è sempre disponibile su questa pagina, con la data indicata sopra.'],
+ ['Contatti', 'Per domande su questa informativa scrivici a <a href="mailto:{email}">{email}</a>.']],
+pl: ['Polski', 'Polityka prywatności', 'Data wejścia w życie: 22 października 2026 r.',
+ 'Niniejsza polityka wyjaśnia, w jaki sposób gra mobilna <b>Trans Europe Logistics</b> („Gra”), stworzona przez prywatnego twórcę, postępuje z informacjami. Korzystając z Gry, akceptujesz tę politykę.',
+ ['Jakie dane zbieramy', 'Gra nie ma kont, rejestracji ani logowania. Nie prosimy o imię, adres e-mail, numer telefonu, kontakty, zdjęcia ani lokalizację. Postęp i ustawienia Gry są zapisywane wyłącznie na Twoim urządzeniu i nigdy nie są do nas wysyłane.'],
+ ['Reklamy (Google AdMob)', 'Gra wyświetla reklamy Google AdMob. Aby wyświetlać i mierzyć reklamy oraz zapobiegać oszustwom, Google może zbierać i przetwarzać: identyfikator reklamowy urządzenia, informacje o urządzeniu i aplikacji (model, wersja systemu, język), adres IP (na jego podstawie można ustalić przybliżoną lokalizację), dane o interakcjach z reklamami oraz dane o awariach i diagnostyce. Dane te zbiera i przetwarza Google zgodnie z <a href="{gp}">Polityką prywatności Google</a>. Więcej: <a href="{gpart}">jak Google wykorzystuje dane z witryn i aplikacji korzystających z jego usług</a>.'],
+ ['Twoja zgoda i wybór', 'Jeśli przebywasz w Europejskim Obszarze Gospodarczym, Wielkiej Brytanii lub Szwajcarii, Gra prosi o zgodę przed wyświetlaniem spersonalizowanych reklam. Możesz w każdej chwili zmienić wybór przyciskiem „Ustawienia prywatności reklam” w Grze. Na Androidzie możesz też zresetować lub usunąć identyfikator reklamowy w ustawieniach urządzenia (Ustawienia → Google → Reklamy) i zarządzać personalizacją reklam na <a href="{ads}">adssettings.google.com</a>.'],
+ ['Powiadomienia', 'Jeśli zezwolisz na powiadomienia, Gra tworzy lokalne przypomnienia na urządzeniu (np. gdy ciężarówka zakończy zlecenie). Powstają one na samym urządzeniu i nie wysyłają żadnych danych.'],
+ ['Udostępnianie i sprzedaż danych', 'Nie sprzedajemy Twoich danych osobowych i nie udostępniamy danych nikomu poza Google jako wskazanym wyżej dostawcą reklam.'],
+ ['Przechowywanie i usuwanie danych', 'Dane Gry pozostają na Twoim urządzeniu, dopóki nie odinstalujesz Gry lub nie wyczyścisz jej danych. Nie przechowujemy Twoich danych na naszych serwerach, więc nie mamy czego usuwać; w przypadku danych przetwarzanych przez Google skorzystaj z opcji opisanych wyżej.'],
+ ['Dzieci', 'Gra nie jest przeznaczona dla dzieci poniżej 13 lat i świadomie nie zbieramy danych osobowych dzieci.'],
+ ['Zmiany', 'Możemy aktualizować tę politykę. Aktualna wersja jest zawsze dostępna na tej stronie, a data wejścia w życie podana jest powyżej.'],
+ ['Kontakt', 'W razie pytań dotyczących tej polityki napisz do nas: <a href="mailto:{email}">{email}</a>.']],
+pt: ['Português', 'Política de Privacidade', 'Data de vigência: 22 de outubro de 2026',
+ 'Esta política explica como o jogo para celular <b>Trans Europe Logistics</b> (o “Jogo”), criado por um desenvolvedor independente, trata as informações. Ao usar o Jogo, você concorda com esta política.',
+ ['Dados que coletamos', 'O Jogo não tem contas, cadastro nem login. Não pedimos seu nome, e-mail, número de telefone, contatos, fotos ou localização. Seu progresso e suas configurações ficam salvos apenas no seu dispositivo e nunca são enviados para nós.'],
+ ['Publicidade (Google AdMob)', 'O Jogo exibe anúncios do Google AdMob. Para exibir e medir anúncios e evitar fraudes, o Google pode coletar e processar: o ID de publicidade do dispositivo, informações do dispositivo e do app (modelo, versão do sistema, idioma), o endereço IP (que pode indicar uma localização aproximada), dados de interação com anúncios e dados de falhas e diagnóstico. Esses dados são coletados e processados pelo Google de acordo com a <a href="{gp}">Política de Privacidade do Google</a>. Saiba mais: <a href="{gpart}">como o Google usa informações de sites e apps que usam seus serviços</a>.'],
+ ['Seu consentimento e suas escolhas', 'Se você estiver no Espaço Econômico Europeu, no Reino Unido ou na Suíça, o Jogo pede seu consentimento antes de exibir anúncios personalizados. Você pode alterar sua escolha a qualquer momento pelo botão “Configurações de privacidade de anúncios” no Jogo. No Android, você também pode redefinir ou excluir o ID de publicidade nas configurações do dispositivo (Configurações → Google → Anúncios) e gerenciar a personalização de anúncios em <a href="{ads}">adssettings.google.com</a>.'],
+ ['Notificações', 'Se você permitir notificações, o Jogo cria lembretes locais no dispositivo (por exemplo, quando um caminhão conclui uma entrega). Eles são criados no próprio dispositivo e não enviam nenhum dado.'],
+ ['Compartilhamento e venda de dados', 'Não vendemos seus dados pessoais nem os compartilhamos com ninguém, exceto com o Google como provedor de anúncios mencionado acima.'],
+ ['Retenção e exclusão de dados', 'Os dados do Jogo permanecem no seu dispositivo até você desinstalar o Jogo ou limpar os dados dele. Como não armazenamos seus dados em nossos servidores, não há nada para excluirmos; para dados processados pelo Google, use as opções descritas acima.'],
+ ['Crianças', 'O Jogo não é direcionado a crianças menores de 13 anos e não coletamos intencionalmente dados pessoais de crianças.'],
+ ['Alterações', 'Podemos atualizar esta política. A versão atual está sempre disponível nesta página, com a data de vigência indicada acima.'],
+ ['Contato', 'Em caso de dúvidas sobre esta política, escreva para <a href="mailto:{email}">{email}</a>.']],
+tr: ['Türkçe', 'Gizlilik Politikası', 'Yürürlük tarihi: 22 Ekim 2026',
+ 'Bu politika, bağımsız bir geliştirici tarafından hazırlanan <b>Trans Europe Logistics</b> mobil oyununun (“Oyun”) bilgileri nasıl işlediğini açıklar. Oyunu kullanarak bu politikayı kabul etmiş olursunuz.',
+ ['Topladığımız veriler', 'Oyunda hesap, kayıt veya giriş yoktur. Adınızı, e-postanızı, telefon numaranızı, kişilerinizi, fotoğraflarınızı veya konumunuzu istemeyiz. Oyun ilerlemeniz ve ayarlarınız yalnızca cihazınızda saklanır ve bize asla gönderilmez.'],
+ ['Reklamlar (Google AdMob)', 'Oyun, Google AdMob reklamları gösterir. Reklamları göstermek, ölçmek ve dolandırıcılığı önlemek için Google şunları toplayıp işleyebilir: cihazınızın reklam kimliği, cihaz ve uygulama bilgileri (model, sistem sürümü, dil), IP adresi (yaklaşık konumu gösterebilir), reklamlarla etkileşim verileri ile çökme ve tanılama verileri. Bu veriler Google tarafından <a href="{gp}">Google Gizlilik Politikası</a> kapsamında toplanır ve işlenir. Daha fazla bilgi: <a href="{gpart}">Google, hizmetlerini kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a>.'],
+ ['Onayınız ve seçenekleriniz', 'Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre’deyseniz Oyun, kişiselleştirilmiş reklam göstermeden önce onayınızı ister. Seçiminizi Oyundaki “Reklam gizlilik ayarları” düğmesiyle istediğiniz zaman değiştirebilirsiniz. Android’de reklam kimliğinizi cihaz ayarlarından (Ayarlar → Google → Reklamlar) sıfırlayabilir veya silebilir, reklam kişiselleştirmeyi <a href="{ads}">adssettings.google.com</a> adresinden yönetebilirsiniz.'],
+ ['Bildirimler', 'Bildirimlere izin verirseniz Oyun, cihazınızda yerel hatırlatıcılar oluşturur (örneğin bir kamyon işini bitirdiğinde). Bunlar cihazın kendisinde oluşturulur ve hiçbir veri göndermez.'],
+ ['Verilerin paylaşılması ve satılması', 'Kişisel verilerinizi satmayız ve yukarıda belirtilen reklam sağlayıcısı Google dışında kimseyle paylaşmayız.'],
+ ['Saklama ve silme', 'Oyun verileri, Oyunu kaldırana veya verilerini temizleyene kadar cihazınızda kalır. Verilerinizi sunucularımızda saklamadığımız için bizim silebileceğimiz bir şey yoktur; Google tarafından işlenen veriler için yukarıdaki seçenekleri kullanın.'],
+ ['Çocuklar', 'Oyun 13 yaşından küçük çocuklara yönelik değildir ve çocuklardan bilerek kişisel veri toplamayız.'],
+ ['Değişiklikler', 'Bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu sayfada, yukarıdaki yürürlük tarihiyle birlikte yer alır.'],
+ ['İletişim', 'Bu politika hakkında sorularınız için bize yazın: <a href="mailto:{email}">{email}</a>.']]
+};
+const fill = s => s.replace(/\{(\w+)\}/g, (m, k) => k === 'email' ? EMAIL : LINKS[k]);
+function show(lang) {
+  const [name, title, date, intro, ...secs] = T[lang];
+  document.documentElement.lang = lang;
+  document.title = 'Trans Europe Logistics — ' + title;
+  document.getElementById('doc').innerHTML = `<h1>${title}</h1><p class="date">Trans Europe Logistics · ${date}</p><p>${fill(intro)}</p>` +
+    secs.map(([h, p]) => `<h2>${h}</h2><p>${fill(p)}</p>`).join('');
+  document.querySelectorAll('#langs button').forEach(b => b.classList.toggle('on', b.dataset.l === lang));
+  if (location.hash !== '#' + lang) history.replaceState(null, '', '#' + lang);
+}
+document.getElementById('langs').innerHTML = Object.keys(T).map(l => `<button data-l="${l}">${T[l][0]}</button>`).join('');
+document.getElementById('langs').onclick = e => { const l = e.target.dataset && e.target.dataset.l; if (l) show(l); };
+const pick = () => { const h = location.hash.slice(1); if (T[h]) return h; const n = (navigator.language || 'en').slice(0, 2).toLowerCase(); return T[n] ? n : 'en'; };
+show(pick());
+</script>
+<noscript><p style="max-width:760px;margin:0 auto;padding:0 16px">Trans Europe Logistics does not collect personal data. Ads are provided by Google AdMob (see policies.google.com/privacy). Contact: nik911911@gmail.com</p></noscript>
+</body>
+</html>
